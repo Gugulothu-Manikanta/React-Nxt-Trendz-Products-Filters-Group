@@ -220,7 +220,7 @@ class AllProductsSection extends Component {
   }
 
   changeSearchInput = searchInput => {
-    this.setState({searchInput})
+    this.setState({searchInput},this.getProducts)
   }
 
   onFilterSearchInput = () => {
